@@ -36,6 +36,7 @@ def random_shadow(image):
 
 ## Commands (in Anaconda Prompt)
 
-1. Activating the environment ```conda activate car-behavioral-cloning```
-2. Training the model ```python model.py -d "path to where IMG folder and driving_log.csv are located"```
-3. Runing the model ```python drive.py (name of the trained weight file)``` you need to open the Udacity Simulator in Autonomous mode first
+1. Installing the Dependancies ```conda env create -f enviornment.yml```
+2. Activating the environment ```conda activate car-behavioral-cloning```
+3. Training the model ```python model.py -d "path to where IMG folder and driving_log.csv are located"```
+4. Runing the model ```python drive.py (name of the trained weight file)``` you need to open the Udacity Simulator in Autonomous mode first
