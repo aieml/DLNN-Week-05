@@ -45,9 +45,11 @@ def random_shadow(image):
 
 ## Augmentation using Keras inbuilt method
 
-```python aug = ImageDataGenerator(rotation_range=20,zoom_range=0.15,width_shift_range=0.2,height_shift_range=0.2,shear_range=0.15,horizontal_flip=True,fill_mode="nearest")```
+```python 
+aug = ImageDataGenerator(rotation_range=20,zoom_range=0.15,width_shift_range=0.2,height_shift_range=0.2,shear_range=0.15,horizontal_flip=True,fill_mode="nearest")```
 
-```python BS=40
+```python 
+BS=40
 history=model.fit(aug.flow(train_data, train_target, batch_size=BS),steps_per_epoch=len(train_data) // BS,
                   validation_data=(test_data, test_target),validation_steps=len(test_data) // BS,epochs=50)```
                  
