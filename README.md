@@ -42,3 +42,15 @@ def random_shadow(image):
 2. Activating the environment ```conda activate car-behavioral-cloning```
 3. Training the model ```python model.py -d "path to where IMG folder and driving_log.csv are located"```
 4. Runing the model ```python drive.py (name of the trained weight file)``` you need to open the Udacity Simulator in Autonomous mode first
+
+## Augmentation using Keras inbuilt method
+
+```aug = ImageDataGenerator(rotation_range=20,zoom_range=0.15,width_shift_range=0.2,height_shift_range=0.2,shear_range=0.15,horizontal_flip=True,fill_mode="nearest")
+```
+
+```BS=40
+history=model.fit(aug.flow(train_data, train_target, batch_size=BS),steps_per_epoch=len(train_data) // BS,
+                  validation_data=(test_data, test_target),validation_steps=len(test_data) // BS,epochs=50)```
+                 
+
+
