@@ -8,6 +8,8 @@ In this week trained a CNN to identify cat &amp; dogs and tested it with some un
 3. Naoki Shibuya's  Github repository on [Self Driving Car](https://github.com/naokishibuya/car-behavioral-cloning)
 4. Image Augmentation [tutorial](https://medium.com/@thimblot/data-augmentation-boost-your-image-dataset-with-few-lines-of-python-155c2dc1baec)
 5. End to End Learning for Self-Driving Cars [paper](https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf) by NVIDIA
+6. Download Udacity Self Driving Car [Simulator](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/Term1-Sim/term1-simulator-windows.zip)
+
 
 ## Modifications
 
